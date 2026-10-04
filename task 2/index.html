@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+    <h1> doctor appoitment booking system</h1>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                medicare
+            </div>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#doctor">doctor</a></li>
+                <li><a href="#department-filters">department</a></li>
+                <li><a href="#appointemnt">appointemnt</a></li>
+            </ul>
+
+            <a href="appointemnt.html" class="book-btn">book appointemnt</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>indias #1 appointment system</h2>
+        <p>The complete cloud-based Hospital Management Software with EMR, OPD/IPD billing, and pharmacy management.
+ NuvertOS empowers Hospitals, Clinics, and Labs to automate operations, enhance patient care, and achieve digital excellence.</p>
+ <div>
+    <h3>good things about us:</h3>
+    <p>patient Lifecycle Management (OPD to Discharge)</p>
+    <p>inventory, Pharmacy, & Lab Integrations</p>
+    <p>Powerful Reporting, Audit & Compliance</p>
+    <p>Billing & Accounting</p>
+    <p>360° Clinical & Smart Nursing Module</p>
+    <button type="click">get a free demo</button>
+    <a href="tel:+919928494396" class="call-btn">
+        <button type="button">call now</button>
+    </a>
+ </div>
+
+
+ <div class="doctor-profile" id="doctor">
+
+    <div id="doctor-searchpro">
+        <input type="text" id="doctorsearch" placeholder="search doctor">
+        <select id="department-filters">
+            <option value="all">all department</option>
+            <option value="cardiology">cardiology</option>
+            <option value="dermatology">dermatology</option>
+            <option value="neurology">neurology</option>
+        </select>
+
+    </div>
+
+    <div class="doctorrajesh-profile">
+
+        <img src="download (1).jpeg" alt="Dr. Rajeshi Sharma">
+
+        <h1>Dr. Rajeshi Sharma</h1>
+
+        <p>Cardiologist</p>
+
+        <h3>Qualification</h3>
+        <p>MBBS, MD</p>
+
+        <h3>Experience</h3>
+        <p>10 Years</p>
+
+        <h3>Hospital</h3>
+        <p>City Hospital</p>
+
+        <h3>Consultation Fee</h3>
+        <p>₹500</p>
+
+        <h2>About Doctor</h2>
+
+        <p>
+            Dr. Rajesh Sharma is an experienced cardiologist
+            specializing in heart-related treatments.
+        </p>
+
+        <h2>Available Days</h2>
+
+        <p>Monday, Wednesday, Friday</p>
+
+        <h2>Available Time</h2>
+
+        <p>10:00 AM - 2:00 PM</p>
+
+        <a href="tel:+919876543210">
+            <button>Call Doctor</button>
+        </a>
+
+        <button>Book Appointment</button>
+
+    </div>
+
+ </div>
+
+        <form id="appointemnt">
+            <h2>Request a free demo</h2>
+            <label>patient name:</label>
+            <input type="text" id="name" placeholder="enter your name"><br>
+            <label>email:</label>
+            <input type="email" id="email" placeholder="enter your email"><br>
+            <label>faculty name:</label>
+            <input type="name" placeholder="enter faculty name" id="facultyname"><br>
+            <label>number:</label>
+            <input type="number" placeholder="enter your number" id="number"><br>
+            <label>message:</label>
+            <input type="message" placeholder="enter your message" id="message"><br>
+            <label for="date">date:</label>
+            <input type="datetime" placeholder="date" id="date"><br>
+            <label for="time">time:</label>
+            <input type="time" placeholder="time" id="time">
+            <button type="submit" id="btn-submit">book appointment</button>
+        </form>
+
+        <div>
+            <h1>appointment summary</h1>
+            <div class="doctor-details">
+                <h2>doctor detail</h2>
+                <p><strong>doctor:</strong> dr.rajesh goyal</p>
+                <p><strong>department:</strong> cardiology</p>
+            </div>
+
+            <div class="patient-detail">
+                <h2>patient details</h2>
+                <p><strong>patient name:</strong> mr.ranveer singh</p>
+                <p><strong>Email:</strong>singhr89694@gmail.com</p>
+                <p><strong>number:</strong>9928494396</p>
+            </div>
+              <div class="appointment-details">
+            <h2>Appointment Details</h2>
+
+            <p><strong>Date:</strong> 10 October 2026</p>
+            <p><strong>Time:</strong> 10:30 AM</p>
+            <p><strong>Reason:</strong> General Checkup</p>
+        </div>
+
+        <div class="buttons">
+            <button type="button">Edit Appointment</button>
+            <button type="button">Confirm Appointment</button>
+        </div>
+
+    </div>
+
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
