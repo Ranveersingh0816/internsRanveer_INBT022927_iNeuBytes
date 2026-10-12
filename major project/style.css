@@ -1,0 +1,347 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #087f8c;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sidebar */
+aside {
+    width: 230px;
+    min-width: 230px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 20px;
+}
+
+aside h2 {
+    color: #087f8c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 8px;
+}
+
+aside nav a {
+    display: block;
+    text-decoration: none;
+    color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+aside nav a:hover {
+    background-color: #087f8c;
+    color: white;
+}
+
+/* Dashboard Content */
+main > div {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    scroll-margin-top: 20px;
+    overflow-x: auto;
+}
+
+section h2 {
+    color: #087f8c;
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 2px solid #e5eeee;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Dashboard Overview Cards */
+#dashboard,
+#overview {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+#dashboard h2,
+
+#overview h2 {
+    grid-column: 1 / -1;
+}
+
+#dashboard > div,
+
+#overview > div {
+    background-color: #e8f7f8;
+    padding: 20px;
+    border-left: 4px solid #087f8c;
+    border-radius: 6px;
+}
+
+#dashboard > div p,
+
+#overview > div p {
+    color: #087f8c;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    background-color: #087f8c;
+    color: white;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 3px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #065e68;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+thead {
+    background-color: #e8f7f8;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    color: #087f8c;
+    white-space: nowrap;
+}
+
+tbody tr:hover {
+    background-color: #f5fbfb;
+}
+
+/* Patient Overview Cards */
+section > div {
+    margin-bottom: 15px;
+}
+
+/* Departments */
+#departments ul {
+    padding-left: 25px;
+}
+
+#departments li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Reports */
+#reports > div {
+    background-color: #f7fafa;
+    padding: 18px;
+    border: 1px solid #e1eeee;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+#reports p {
+    margin: 5px 0;
+}
+
+#reports ul {
+    padding-left: 25px;
+}
+
+/* Admin Profile */
+#profile > div {
+    background-color: #f7fafa;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+#profile p {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #173b46;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Tablet and Mobile Responsive Design */
+@media (max-width: 900px) {
+    main {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    aside {
+        width: 190px;
+        min-width: 190px;
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    aside {
+        position: static;
+        width: 100%;
+        min-width: 0;
+    }
+
+    aside ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 5px;
+    }
+
+    aside ul li {
+        margin-bottom: 0;
+    }
+
+    aside nav a {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    main > div {
+        width: 100%;
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    section h2 {
+        font-size: 19px;
+    }
+
+    #dashboard,
+
+    #overview {
+        grid-template-columns: 1fr;
+    }
+
+    #dashboard h2,
+
+    #overview h2 {
+        grid-column: auto;
+    }
+
+    footer nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}

@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare | Healthcare Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Healthcare Management Dashboard</h1>
+        <p>Welcome, Admin</p>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main>
+
+        <!-- Sidebar -->
+        <aside>
+            <h2>MediCare</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#appointments">Appointments</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#patients">Patients</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#medicines">Medicines</a></li>
+                    <li><a href="#billing">Billing</a></li>
+                    <li><a href="#reports">Reports</a></li>
+                    <li><a href="#profile">Admin Profile</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Dashboard Content -->
+        <div>
+
+            <!-- Dashboard Overview -->
+            <section id="dashboard">
+                <h2>Dashboard Overview</h2>
+
+                <div>
+                    <h3>Total Patients</h3>
+                    <p>1,248</p>
+                </div>
+
+                <div>
+                    <h3>Total Doctors</h3>
+                    <p>86</p>
+                </div>
+
+                <div>
+                    <h3>Today's Appointments</h3>
+                    <p>124</p>
+                </div>
+
+                <div>
+                    <h3>Total Revenue</h3>
+                    <p>₹4,85,000</p>
+                </div>
+            </section>
+
+            <!-- Appointment Management -->
+            <section id="appointments">
+                <h2>Appointment Management</h2>
+                <button type="button">+ Book Appointment</button>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Appointment ID</th>
+                            <th>Patient</th>
+                            <th>Doctor</th>
+                            <th>Department</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>A001</td>
+                            <td>Rahul Sharma</td>
+                            <td>Dr. Amit Gupta</td>
+                            <td>Cardiology</td>
+                            <td>10 Oct 2026</td>
+                            <td>10:00 AM</td>
+                            <td>Confirmed</td>
+                            <td>
+                                <button type="button">View</button>
+                                <button type="button">Edit</button>
+                                <button type="button">Cancel</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>A002</td>
+                            <td>Priya Singh</td>
+                            <td>Dr. Neha Mehta</td>
+                            <td>Dermatology</td>
+                            <td>10 Oct 2026</td>
+                            <td>11:30 AM</td>
+                            <td>Pending</td>
+                            <td>
+                                <button type="button">View</button>
+                                <button type="button">Edit</button>
+                                <button type="button">Cancel</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>A003</td>
+                            <td>Arjun Verma</td>
+                            <td>Dr. Raj Kumar</td>
+                            <td>Neurology</td>
+                            <td>10 Oct 2026</td>
+                            <td>01:00 PM</td>
+                            <td>Completed</td>
+                            <td>
+                                <button type="button">View</button>
+                                <button type="button">Edit</button>
+                                <button type="button">Cancel</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Patient Overview -->
+            <section>
+                <h2>Patient Overview</h2>
+
+                <div>
+                    <h3>New Patients</h3>
+                    <p>48</p>
+                </div>
+
+                <div>
+                    <h3>Returning Patients</h3>
+                    <p>96</p>
+                </div>
+
+                <div>
+                    <h3>Emergency Patients</h3>
+                    <p>12</p>
+                </div>
+            </section>
+
+            <!-- Department Management -->
+            <section id="departments">
+                <h2>Departments</h2>
+
+                <ul>
+                    <li>Cardiology</li>
+                    <li>Neurology</li>
+                    <li>Dermatology</li>
+                    <li>Orthopedics</li>
+                    <li>Pediatrics</li>
+                    <li>General Medicine</li>
+                </ul>
+            </section>
+
+            <!-- Doctor Management -->
+            <section id="doctors">
+                <h2>Doctor Management</h2>
+                <button type="button">+ Add Doctor</button>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Doctor Name</th>
+                            <th>Specialization</th>
+                            <th>Department</th>
+                            <th>Experience</th>
+                            <th>Availability</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Dr. Amit Gupta</td>
+                            <td>Cardiologist</td>
+                            <td>Cardiology</td>
+                            <td>12 Years</td>
+                            <td>Available</td>
+                            <td>
+                                <button type="button">Edit</button>
+                                <button type="button">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Dr. Neha Mehta</td>
+                            <td>Dermatologist</td>
+                            <td>Dermatology</td>
+                            <td>8 Years</td>
+                            <td>Available</td>
+                            <td>
+                                <button type="button">Edit</button>
+                                <button type="button">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Dr. Raj Kumar</td>
+                            <td>Neurologist</td>
+                            <td>Neurology</td>
+                            <td>10 Years</td>
+                            <td>Unavailable</td>
+                            <td>
+                                <button type="button">Edit</button>
+                                <button type="button">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Patient Management -->
+            <section id="patients">
+                <h2>Patient Management</h2>
+                <button type="button">+ Add Patient</button>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient ID</th>
+                            <th>Patient Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Blood Group</th>
+                            <th>Condition</th>
+                            <th>Doctor</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>P001</td>
+                            <td>Rahul Sharma</td>
+                            <td>28</td>
+                            <td>Male</td>
+                            <td>B+</td>
+                            <td>Heart Problem</td>
+                            <td>Dr. Amit Gupta</td>
+                            <td>Active</td>
+                            <td>
+                                <button type="button">View</button>
+                                <button type="button">Edit</button>
+                                <button type="button">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>P002</td>
+                            <td>Priya Singh</td>
+                            <td>32</td>
+                            <td>Female</td>
+                            <td>O+</td>
+                            <td>Skin Problem</td>
+                            <td>Dr. Neha Mehta</td>
+                            <td>Active</td>
+                            <td>
+                                <button type="button">View</button>
+                                <button type="button">Edit</button>
+                                <button type="button">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>P003</td>
+                            <td>Arjun Verma</td>
+                            <td>45</td>
+                            <td>Male</td>
+                            <td>A+</td>
+                            <td>Neurological</td>
+                            <td>Dr. Raj Kumar</td>
+                            <td>Discharged</td>
+                            <td>
+                                <button type="button">View</button>
+                                <button type="button">Edit</button>
+                                <button type="button">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Medicine Management -->
+            <section id="medicines">
+                <h2>Medicine Management</h2>
+                <button type="button">+ Add Medicine</button>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Medicine ID</th>
+                            <th>Medicine Name</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Expiry Date</th>
+                            <th>Supplier</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>M001</td>
+                            <td>Paracetamol</td>
+                            <td>Tablet</td>
+                            <td>500</td>
+                            <td>₹20</td>
+                            <td>2027-05</td>
+                            <td>ABC Pharma</td>
+                            <td>Available</td>
+                            <td>
+                                <button type="button">Edit</button>
+                                <button type="button">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>M002</td>
+                            <td>Amoxicillin</td>
+                            <td>Capsule</td>
+                            <td>200</td>
+                            <td>₹80</td>
+                            <td>2026-12</td>
+                            <td>XYZ Pharma</td>
+                            <td>Available</td>
+                            <td>
+                                <button type="button">Edit</button>
+                                <button type="button">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Billing Management -->
+            <section id="billing">
+                <h2>Billing Management</h2>
+                <button type="button">+ Create Bill</button>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bill ID</th>
+                            <th>Patient</th>
+                            <th>Consultation Fee</th>
+                            <th>Medicine Cost</th>
+                            <th>Test Cost</th>
+                            <th>Total Amount</th>
+                            <th>Payment Status</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>B001</td>
+                            <td>Rahul Sharma</td>
+                            <td>₹800</td>
+                            <td>₹500</td>
+                            <td>₹700</td>
+                            <td>₹2,000</td>
+                            <td>Paid</td>
+                            <td>10 Oct 2026</td>
+                            <td>
+                                <button type="button">View</button>
+                                <button type="button">Print</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>B002</td>
+                            <td>Priya Singh</td>
+                            <td>₹600</td>
+                            <td>₹300</td>
+                            <td>₹400</td>
+                            <td>₹1,300</td>
+                            <td>Pending</td>
+                            <td>10 Oct 2026</td>
+                            <td>
+                                <button type="button">View</button>
+                                <button type="button">Print</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Reports and Analytics -->
+            <section id="reports">
+                <h2>Reports &amp; Analytics</h2>
+
+                <div>
+                    <h3>Patient Report</h3>
+                    <p>Total Patients: 1,248</p>
+                    <p>New Patients: 48</p>
+                    <p>Discharged Patients: 32</p>
+                </div>
+
+                <div>
+                    <h3>Appointment Report</h3>
+                    <p>Total Appointments: 124</p>
+                    <p>Completed: 82</p>
+                    <p>Pending: 28</p>
+                    <p>Cancelled: 14</p>
+                </div>
+
+                <div>
+                    <h3>Doctor Report</h3>
+                    <p>Total Doctors: 86</p>
+                    <p>Available Doctors: 72</p>
+                    <p>Unavailable Doctors: 14</p>
+                </div>
+
+                <div>
+                    <h3>Revenue Report</h3>
+                    <p>Total Revenue: ₹4,85,000</p>
+                    <p>Paid Amount: ₹4,20,000</p>
+                    <p>Pending Amount: ₹65,000</p>
+                </div>
+
+                <div>
+                    <h3>Department Report</h3>
+                    <ul>
+                        <li>Cardiology - 280 Patients</li>
+                        <li>Neurology - 190 Patients</li>
+                        <li>Dermatology - 160 Patients</li>
+                        <li>Orthopedics - 220 Patients</li>
+                        <li>Pediatrics - 198 Patients</li>
+                        <li>General Medicine - 200 Patients</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Admin Profile -->
+            <section id="profile">
+                <h2>Admin Profile</h2>
+
+                <div>
+                    <h3>Admin User</h3>
+                    <p>Email: admin@medicare.com</p>
+                    <p>Phone: +91 9876543210</p>
+                    <p>Role: Hospital Administrator</p>
+                    <p>Department: Administration</p>
+
+                    <button type="button">Edit Profile</button>
+                    <button type="button">Change Password</button>
+                    <button type="button">Logout</button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MediCare Healthcare Management System. All rights reserved.</p>
+
+        <nav>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Contact</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
